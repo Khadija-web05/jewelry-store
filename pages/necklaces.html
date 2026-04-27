@@ -1,0 +1,98 @@
+<!-- ADDED: necklaces.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Necklaces</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="../index.html">Jewelry Store</a>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="rings.html">Rings</a></li>
+    <li><a href="necklaces.html">Necklaces</a></li>
+    <li><a href="bracelets.html">Bracelets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>Necklaces Collection</h1>
+  <p>Elegant necklaces for gifts, parties and daily wear.</p>
+</div>
+
+<div class="page">
+  <div class="card-container">
+    <div class="card">
+     <img src="../sources/necklace1.jpg" alt="Gold Necklace">
+      <h3>Gold Necklace</h3>
+      <p>Price: $300</p>
+  <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Gold Necklace')">Buy Now</button>
+    </div>
+
+    <div class="card">
+   <img src="../sources/necklace2.jpg" alt="Silver Necklace">
+      <h3>Silver Necklace</h3>
+      <p>Price: $180</p>
+      <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Silver Necklace')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="../sources/necklace3.jpg" alt="Pearl Necklace">
+      <h3>Pearl Necklace</h3>
+      <p>Price: $250</p>
+     <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Pearl Necklace')">Buy Now</button>
+    </div>
+  </div>
+
+  <h2>Necklace Price Table</h2>
+
+  <div class="table-container">
+    <table style="min-width:300px; max-width:700px;">
+      <thead>
+        <tr>
+          <th>Necklace Name</th>
+          <th>Material</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gold Necklace</td>
+          <td>Gold</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Silver Necklace</td>
+          <td>Silver</td>
+          <td>$180</td>
+        </tr>
+        <tr>
+          <td>Pearl Necklace</td>
+          <td>Pearl</td>
+          <td>$250</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div>
+      <p>© 2026 Jewelry Store</p>
+      <p><a href="../index.html">Back to Home</a></p>
+    </div>
+  </div>
+</footer>
+<!-- ADDED: JavaScript file linked -->
+<script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

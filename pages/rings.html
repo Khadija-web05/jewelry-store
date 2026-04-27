@@ -1,0 +1,100 @@
+<!-- ADDED: rings.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="../index.html">Jewelry Store</a>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="rings.html">Rings</a></li>
+    <li><a href="necklaces.html">Necklaces</a></li>
+    <li><a href="bracelets.html">Bracelets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>Rings Collection</h1>
+  <p>Choose beautiful rings for weddings, gifts and special events.</p>
+</div>
+
+<div class="page">
+  <div class="card-container">
+    <div class="card">
+      <!-- CHANGED: first ring image -->
+<img src="../sources/ring1.jpg" alt="Gold Ring">
+      <h3>Gold Ring</h3>
+      <p>Price: $200</p>
+      <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Gold Ring')">Buy Now</button>
+    </div>
+
+    <div class="card">
+     <!-- CHANGED: second ring image -->
+<img src="../sources/ring2.jpg" alt="Diamond Ring">
+      <h3>Diamond Ring</h3>
+      <p>Price: $350</p>
+ <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Diamond Ring')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <!-- CHANGED: third ring image -->
+<img src="../sources/ring3.jpg" alt="Silver Ring">
+      <h3>Silver Ring</h3>
+      <p>Price: $120</p>
+    <!-- CHANGED: JavaScript function added -->
+<button class="primary-button medium-button" onclick="showMessage('Silver Ring')">Buy Now</button>
+    </div>
+  </div>
+
+  <h2>Ring Price Table</h2>
+
+  <div class="table-container">
+    <table style="min-width:300px; max-width:700px;">
+      <thead>
+        <tr>
+          <th>Ring Name</th>
+          <th>Material</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gold Ring</td>
+          <td>Gold</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>Diamond Ring</td>
+          <td>Diamond</td>
+          <td>$350</td>
+        </tr>
+        <tr>
+          <td>Silver Ring</td>
+          <td>Silver</td>
+          <td>$120</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div>
+      <p>© 2026 Jewelry Store</p>
+      <p><a href="../index.html">Back to Home</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
