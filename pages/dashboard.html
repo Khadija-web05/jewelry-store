@@ -1,0 +1,165 @@
+<!-- ADDED: Dashboard page -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="../index.html">Jewelry Store</a>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="rings.html">Rings</a></li>
+    <li><a href="necklaces.html">Necklaces</a></li>
+    <li><a href="bracelets.html">Bracelets</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="contact.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>Jewelry Store Dashboard</h1>
+  <p>Manage jewelry stock, cart, search and product records.</p>
+</div>
+
+<div class="page">
+  <h2>Stock Management</h2>
+
+  <div class="dashboard-actions">
+    <div class="card">
+      <h3>View All Stock</h3>
+      <p>View all rings, necklaces and bracelets.</p>
+      <button class="primary-button medium-button" onclick="showStockAction('View All Stock')">Open</button>
+    </div>
+
+    <div class="card">
+      <h3>Delete Stock</h3>
+      <p>Remove unavailable jewelry stock.</p>
+      <button class="outline-button medium-button" onclick="showStockAction('Delete Stock')">Open</button>
+    </div>
+
+    <div class="card">
+      <h3>Update Stock</h3>
+      <p>Update jewelry price and quantity.</p>
+      <button class="primary-button medium-button" onclick="showStockAction('Update Stock')">Open</button>
+    </div>
+
+    <div class="card">
+      <h3>Insert New Stock</h3>
+      <p>Add new jewelry products.</p>
+      <button class="outline-button medium-button" onclick="showStockAction('Insert New Stock')">Open</button>
+    </div>
+  </div>
+<!-- ADDED: dashboard action result -->
+<p id="stockActionResult"></p>
+  <h2>Graphical Stock View</h2>
+
+  <div class="stock-graph">
+    <div class="stock-row">
+      <div class="stock-name">Rings</div>
+      <div class="stock-line">
+        <div class="stock-fill ring-stock">80%</div>
+      </div>
+    </div>
+
+    <div class="stock-row">
+      <div class="stock-name">Necklaces</div>
+      <div class="stock-line">
+        <div class="stock-fill necklace-stock">60%</div>
+      </div>
+    </div>
+
+    <div class="stock-row">
+      <div class="stock-name">Bracelets</div>
+      <div class="stock-line">
+        <div class="stock-fill bracelet-stock">45%</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Cart View</h2>
+
+  <div class="table-container">
+    <table style="min-width:300px; max-width:800px;">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Gold Ring</td>
+          <td>1</td>
+          <td>$200</td>
+        </tr>
+
+        <tr>
+          <td>Silver Necklace</td>
+          <td>1</td>
+          <td>$180</td>
+        </tr>
+
+        <tr>
+          <td>Classic Bracelet</td>
+          <td>2</td>
+          <td>$320</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Search Products</h2>
+
+  <div class="search-section">
+    <div class="form-container">
+      <h3>Search by Category</h3>
+
+      <div>
+        <label>Select Category</label>
+        <select id="categorySearch">
+          <option>Rings</option>
+          <option>Necklaces</option>
+          <option>Bracelets</option>
+        </select>
+      </div>
+
+      <button class="primary-button medium-button" onclick="searchByCategory()">Search</button>
+      <p id="categoryResult"></p>
+    </div>
+
+    <div class="form-container">
+      <h3>Search by Price</h3>
+
+      <div>
+        <label>Enter Maximum Price</label>
+        <input type="number" id="priceSearch">
+      </div>
+
+      <button class="outline-button medium-button" onclick="searchByPrice()">Search</button>
+      <p id="priceResult"></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div>
+      <p>© 2026 Jewelry Store</p>
+      <p><a href="../index.html">Back to Home</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../jsFile/jsFunctions.js"></script>
+
+</body>
+</html>
